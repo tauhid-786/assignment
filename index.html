@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messaging App</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <section class="chat__section">
+        <div class="brand">
+            <img height="30" width="30" src="/image.png" alt="Brand logo" style="border-radius: 50%;">
+            <h1>message</h1>
+        </div>
+        <div class="message__area"></div>
+        <div>
+            <div id="dest" style="float: left; width: 25%; border-right: 1px solid black;">
+                <textarea id="destno" cols="12" rows="1" placeholder="Receiver ..."></textarea>
+            </div>
+            <div style="float: left; width: 75%;">
+                <textarea id="textarea" cols="18" rows="1" placeholder="Write a message..."></textarea>
+            </div>
+        </div>
+    </section>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/client.js"></script>
+</body>
+
+</html>
